@@ -1,0 +1,25 @@
+build:
+  main: main.go
+  binary: digivizer-newrelic-smith
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - linux
+  goarch:
+    - amd64
+fpm:
+  formats:
+      - deb
+  vendor: "digivizer.com"
+  homepage: "https://digivizer.com/"
+  maintainer: "Rob Sharp <engineering@digivizer.com>"
+  description: "An infrastructure plugin to support Smith in New Relic"
+  license: "Apache 2.0"
+archive:
+  format: tar.gz
+  name_template: "{{.Binary}}_{{.Version}}_{{.Os}}-{{.Arch}}"
+  files:
+    - README.md
+    - LICENSE.md
+release:
+  draft: true

@@ -1,0 +1,42 @@
+defaults: &defaults
+  working_directory: /go/src/github.com/digivizer
+  docker:
+      - image: bepsays/ci-goreleaser:0.34.2-5
+
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+            command: |
+                make
+      - persist_to_workspace:
+          root: .
+          paths: .
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: /go/src/github.com/digivizer
+      - run:
+            command: |
+                    cd newrelic-smith
+                    git config --global user.email "engineering@digivizer.com"
+                    git config --global user.name "releaser"
+                    go run -tags release main.go release -r ${CIRCLE_BRANCH}
+
+workflows:
+  version: 2
+  default:
+      jobs:
+        - build
+        - hold:
+            type: approval
+            requires:
+              - build
+        - release:
+            context: org-global
+            requires:
+            - hold
