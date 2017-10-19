@@ -1,0 +1,59 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Ksl4kXr4ty0HwjrLRLZOrNz05Bw=",
+			"path": "github.com/Sirupsen/logrus",
+			"revision": "ba1b36c82c5e05c4f912a88eab0dcd91a171688f",
+			"revisionTime": "2017-03-14T19:23:53Z",
+			"version": "v0.11.5",
+			"versionExact": "v0.11.5"
+		},
+		{
+			"checksumSHA1": "jyYVyZKBHiXT9Fecb7iRUyXWwdI=",
+			"path": "github.com/newrelic/infra-integrations-sdk/args",
+			"revision": "b31bc81a228f7cb48496dd6c87815a119df35907",
+			"revisionTime": "2017-07-20T13:55:07Z",
+			"version": "v1.0",
+			"versionExact": "v1.0.0"
+		},
+		{
+			"checksumSHA1": "45zcAovsGwfEvjiql/9SI1JWArE=",
+			"path": "github.com/newrelic/infra-integrations-sdk/cache",
+			"revision": "8e5c9f0622e44eea3ec32a34a0ebd14a89b28cc7",
+			"revisionTime": "2017-09-18T10:40:03Z"
+		},
+		{
+			"checksumSHA1": "6eFl1VzgBKkUbpcOdVhSqLz2oD4=",
+			"path": "github.com/newrelic/infra-integrations-sdk/log",
+			"revision": "b31bc81a228f7cb48496dd6c87815a119df35907",
+			"revisionTime": "2017-07-20T13:55:07Z",
+			"version": "v1.0",
+			"versionExact": "v1.0.0"
+		},
+		{
+			"checksumSHA1": "v6d2OtRT+Xxb8Ytv3L7RzWU9cHI=",
+			"path": "github.com/newrelic/infra-integrations-sdk/metric",
+			"revision": "b31bc81a228f7cb48496dd6c87815a119df35907",
+			"revisionTime": "2017-07-20T13:55:07Z",
+			"version": "v1.0",
+			"versionExact": "v1.0.0"
+		},
+		{
+			"checksumSHA1": "QAOEN0X+lEiWTXI7LjOWj1u+yfs=",
+			"path": "github.com/newrelic/infra-integrations-sdk/sdk",
+			"revision": "b31bc81a228f7cb48496dd6c87815a119df35907",
+			"revisionTime": "2017-07-20T13:55:07Z",
+			"version": "v1.0",
+			"versionExact": "v1.0.0"
+		},
+		{
+			"checksumSHA1": "qLwcuele4pa2OxBoa3Titv9Msr0=",
+			"path": "golang.org/x/sys/unix",
+			"revision": "b6e1ae21643682ce023deb8d152024597b0e9bb4",
+			"revisionTime": "2017-09-18T15:00:50Z"
+		}
+	],
+	"rootPath": "github.com/digivizer/newrelic-smith"
+}
